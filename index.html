@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+        }
+        body{
+            background-color: rgb(2, 2, 2);
+
+        }
+        #cards{
+            position: absolute;
+            height: 35%;
+            width: 100%;
+          /* background-color: rgba(127, 255, 212, 0.334);*/
+            top: 35%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+        #cards .section{
+            height: 80%;
+            width: 15%;
+            background-color: bisque;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #cards .section:hover{
+            transform: rotate3d(-1,1,0,25deg);
+            transition: all linear 0.5s;
+        }
+        #cards #card1{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuaIwZY4diqfwuSSXoHvxpQAus9z1WRHjmw&usqp=CAU);
+        }
+        #cards #card2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3N_cAU0saVgNcoH3MrY8DKg4zneIpqZ_3g&usqp=CAU);
+        }
+        #cards #card3{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_bMx-2LClPeM4r5rQYcrl2YGp1ApyZoKTw&usqp=CAU);
+        }
+        #cards .section #overlay{
+            /*position: absolute;*/
+            height: 100%;
+            width: 100%;
+            background-color: rgba(2, 2, 2, 0.522);
+            border-radius: 10px;
+            transition: all linear 0.5s;
+            opacity: 0;
+            text-align: center;
+            
+           /* top: ;*/
+        }
+        #cards #overlay:hover {
+           opacity: 1;
+
+        }
+        #cards .section #overlay h4{
+            color: white;
+            font-size: 50px;
+            position: relative;
+            top: 2%;
+            right: 60%;
+            z-index: 10;
+            text-transform: uppercase;
+        }
+        #cards .section #overlay p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="cards">
+        <div class="section" id="card1">
+        <div id="overlay">
+            <h4>vedant</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi perspiciatis numquam consequatur alias assumenda, neque impedit fugit iure quasi!</p>
+            
+        </div>      
+        </div>
+        <div class="section" id="card2">
+        <div id="overlay">
+            <h4>jalindar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi perspiciatis numquam consequatur alias assumenda, neque impedit fugit iure quasi!</p>
+        </div>
+        </div>
+        <div class="section" id="card3">
+        <div id="overlay">
+            <h4>hundare</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi perspiciatis numquam consequatur alias assumenda, neque impedit fugit iure quasi!</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
